@@ -1,0 +1,208 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.273), rgba(255, 255, 255, 0.5)), url("../images/background_waifu2x_art_noise1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #4a4a4a;
+}
+
+nav {
+    background-color: #ffd1dc; 
+    padding: 15px 25px;
+    border-radius: 30px; 
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9b2b56;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #ffb6c1;
+    color: #fff;
+    transform: translateY(-3px); 
+}
+
+.mainlogo {
+    width: 330px;                 
+    background: #ffe4ec;          
+    padding: 15px;
+    margin: 20px auto;           
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(255, 182, 193, 0.5);
+    text-align: center;
+    border: 2px solid #ffb6c1;
+    animation: fadeInMove 1.5s ease forwards;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    border: 3px solid #ffb6c1;
+}
+
+.mainlogo h1 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #b34b64;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contactinfo {
+    background: white;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px #ffd1db;
+    border: 2px solid #ffe3e8;
+    font-family: 'Yaldevi', sans-serif;
+    text-align: center;
+    opacity: 0;             
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.contactinfo a {
+    color: #b34b64;
+    text-decoration: none;
+}
+
+.contactinfo a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    display: block;
+    width: 500px;
+    margin: 15px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    font-family: 'Yaldevi', sans-serif;
+    color: #b34b64;
+}
+
+.map img {
+    width: 100%;
+    display: block;
+}
+
+.map p {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.map:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.6);
+}
+
+h1, h2 {
+    color: #b34b64;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background: #ffb6c1;
+    color: #613d3d;
+    margin-top: 40px;
+}
+
+@keyframes fadeInMove {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .mainlogo {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .mainlogo h1 {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .contactinfo {
+        padding: 15px;
+    }
+
+    .contactinfo p,
+    .contactinfo a {
+        font-size: 14px;
+    }
+
+    .map {
+        width: 95%;
+    }
+
+    .map p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 1000px) {
+    .mainlogo {
+        width: 70%;
+    }
+
+    .mainlogo h1 {
+        font-size: 19px;
+    }
+
+    .contactinfo {
+        padding: 20px;
+    }
+
+    .map {
+        width: 80%;
+    }
+}
